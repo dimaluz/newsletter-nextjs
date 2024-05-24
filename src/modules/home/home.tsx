@@ -1,7 +1,15 @@
+import Header from "@/shared/widgets/header/header"
+import Banner from "./features/banner"
+import FeatureHighlight from "./features/feature-highlight"
+import Pricing from "./features/pricing"
+
 const Home = () => {
     return (
         <div>
-            Home page
+            <Header />
+            <Banner />
+            <FeatureHighlight />
+            <Pricing />
         </div>
     )
 }
