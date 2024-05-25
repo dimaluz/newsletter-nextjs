@@ -1,4 +1,5 @@
 'use client'
+import { useUser } from "@clerk/nextjs"
 import { NextUIProvider } from "@nextui-org/react"
 import { usePathname } from "next/navigation"
 
@@ -8,6 +9,12 @@ interface ProviderProps {
 
 export default function Provider ({children}: ProviderProps) {
     const pathname = usePathname()
+
+    const {isLoaded} = useUser()
+
+    if (!isLoaded) {
+        return null
+    }
 
     return (
         <NextUIProvider>

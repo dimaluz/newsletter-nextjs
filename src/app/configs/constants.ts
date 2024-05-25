@@ -39,16 +39,31 @@ export const freePlan: PlanType[] = [
 
 export const growPlan: PlanType[] = [
     {
-        title: 'Upto 2500 subscribers',
+        title: 'Upto 10 000 subscribers',
     },
     {
-        title: 'Unlimited sends',
+        title: 'Customs domains',
     },
     {
-        title: 'Custom newsletter',
+        title: 'Api access',
     },
     {
-        title: 'Newsletter analytics',
+        title: 'Newsletter community',
+    },
+]
+
+export const scalePlan: PlanType[] = [
+    {
+        title: 'Upto 100 000 subscribers',
+    },
+    {
+        title: 'Referal program',
+    },
+    {
+        title: 'AI support',
+    },
+    {
+        title: 'Advanced support system',
     },
 ]
 
